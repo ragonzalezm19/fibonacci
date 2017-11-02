@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		// Style
+		link(rel="stylesheet", href="./css/main.css")
+		link(rel="stylesheet", href="./libs/bootstrap/css/bootstrap.min.css")
+		// Scripts
+		script(src="./libs/jquery/jquery.min.js")
+		script(src="./libs/bootstrap/js/bootstrap.min.js")
+		title Fibonacci
+	body
+		.contenedor
+			.block
+				.col-md-12
+					// Fibonacci
+					.col-md-6.fibonacci
+						h1 Fibonacci
+						input#input.form-control(type="text", placeholder="Ingrese numero")
+						button#calcular.btn.btn-primary(data-contador="1") Calcula
+						.alert.alert-danger Solo se permiten numeros
+						// Respuesta
+						//- .table-responsive
+						table.table.table-condensed
+							theader
+								tr
+									th #
+									th n
+									th f(n-1)
+									th f(n)
+							tbody#tbody
+								
+									
+					// Tester
+					.col-md-6.tester
+						h1 Tester
+
+						.col-md-8
+							button#test.btn.btn-primary Test de Conexion  
+								span.glyphicon.glyphicon-transfer(aria-hidden="true")
+							button#reiniciar.btn.btn-danger Reiniciar
+							
+						
+						.col-md-4
+							span.glyphicon.glyphicon-ok(aria-hidden="true")
+							span.glyphicon.glyphicon-remove(aria-hidden="true")
+
+						.col-md-12
+							h3 Lista de valores pruebas
+
+							table.table
+								theader
+									tr
+										th n
+										th f(n)
+										th f(n-1)
+								tbody
+									tr
+										td 0
+										td 0
+										td 0
+									tr
+										td 17
+										td 1597
+										td 987
+									tr
+										td 26
+										td 121393
+										td 75025
+									tr
+										td 30
+										td 832040
+										td 514229
+									tr
+										td 10
+										td 55
+										td 34
+									tr
+										td 22
+										td 17711
+										td 10946
+
+		// Scripts
+		script(src="./js/app.js")

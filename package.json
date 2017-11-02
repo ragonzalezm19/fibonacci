@@ -1,0 +1,27 @@
+{
+  "name": "Fibonacci",
+  "version": "1.0.0",
+  "description": "Programa que calcula a sucesion fibonacci n y n-1 de un numero.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp server",
+    "import": "gulp import",
+    "deploy": "gulp import && gulp deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ragonzalezm19/fibonacci.git"
+  },
+  "author": "Roberto Gonzalez @ragonzalezm19",
+  "license": "ISC",
+  "homepage": "https://github.com/ragonzalezm19/fibonacci.git#README.md",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.2.1"
+  }
+}
